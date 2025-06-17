@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article - IYK</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav >
+        <h1>YAZI</h1>
+        <div id="links"><a href="#published" id="publink"> Yayın Bilgisi </a><a id="metlink" href="#tribute-info"> Metin</a>
+            <button id="yazarbtn">
+                <p>Yazar</p>
+                <div id="yazar">
+                    <img src="wapp.jpg">
+                    <p>İlknur Yaren Karakoç</p>
+                    <div class="yazarlink">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Github</a>
+                    <a href="#">Instagram</a>
+                </div>
+                </div>
+            </button>
+        </div>
+
+    </nav>
+    <main>
+    <div id="published">
+        <div id="texts">
+            <h2 id="tribute-name">Yayın Bilgisi</h2>
+            <p><span>Yayınlandığı Yer: </span> Ortaklar Fen Lisesi Yazın Atölyesi Dergisi</p>
+            <p><span>Yayınlanma Tarihi: </span>2024</p>
+        </div>
+        <div id="img-div">
+            <img id="image" class="dergiimg" src="image.png">
+        </div>
+        </div>
+
+        <div id="tribute-info" class="tutsak">
+            <h2 id="tribute-name">Tutsak</h2>
+    <p class="metin">
+            Sanat ve özgürlük aynı cümlede geçtiğinde benim aklıma ilk gelenlerdendir dışavurumculuk. Bir klişesi, tekniği yoktur. Sana kalmıştır fırça darbelerin, renklerin, ifade etme biçimin, dilin. Hayatı yorumlayan sensindir çalışmalarında özgün fırça darbelerinle. Ağaç çizmeden çizersin, tasvir edersin ağacı; kuş çizmeden çizersin, anlatırsın kuşu; gözyaşı çizmeden hissettirirsin ağlamayı, hüznü, huzursuzluğu kendi dilinde. Düşüncesi bile sınırsızlığın verdiği bir heyecan getirmez mi insana ?.. 
+       </p>
+    <p class="metin">    Ben en çok ekspresyonist çalışmak isterim hesap vermeden kimseye kendi renklerim, kendi darbelerim, kendi izlerimle... O darbelerde saklarım aslında duygularımı; korkularımı, bıkmışlığımı, heyecanlarımı, sevinçlerimi, kararsızlıklarımı, hüzünlerimi, kimsesizliğimi... Yalnızca okuyabilene açıktır. O da çıkmaz ya, neyse…
+       </p>
+    <p class="metin">-Öhö!</p><p class="metin">
+               Kendine geldi. Anlaşılan yine dalmıştı düşüncelere. Şu müşteri de sıkılmadan bitirse portresini iyi olacaktı. Para kazanması lazımdı. Kaç gün olmuştu taze ekmek yemeyeli. Boyası da tükeniyordu. Doğru ya, boya da lazım olacaktı. İçi burkuldu. Sahi, en son ne zaman kendi keyfince çalışmıştı, kullanmıştı şu boyaları “Ya yarın müşteri gelir de boya lazım olursa!” diye tereddüt etmeden? Hatırlamak güçtü. Özgürlüğünü sorgulamadığı gün yoktu. Özgür hissetmiyordu kendini. Gerçi kim ben özgürüm diyebilirdi ki tam anlamıyla, herkesin çıkamadığı bir hapishanesi yok muydu hayatında?.. Çok yazık, çok yazık ki kimisi farkında bile değil bir şekilde tutsak olduğunun!
+               </p>
+    <p class="metin">Açlıktan mı çaresizlikten mi bilinmez; ekşi, acı bir hissiyat vardı midesinde. Dili damağına yapışmıştı. Yaşlı adam da amma sabırsızdı.  Unutmaya çalıştı, resme geri döndü , ancak böyle hafifliyordu açlığı....
+       </p>
+       <p class="metin" id="name">İlknur Yaren Karakoç
+    </p>
+        </div>
+    </main>
+    <footer>
+        <a id="tribute-link" href="//www.linkedin.com/in/ilknur-yaren-k-51058831b/"><p>İlknur Yaren K. @LinkedIn</p></a>
+   </footer>
+
+   <script>
+    //smooth transitions
+        document.getElementById('publink').addEventListener('click', (event) => {
+        event.preventDefault();
+        document.querySelector('#published').scrollIntoView({ behavior: 'smooth' });
+    });
+    document.getElementById('metlink').addEventListener('click', (event) => {
+        event.preventDefault();
+        document.querySelector('.tutsak').scrollIntoView({ behavior: 'smooth' });
+    });
+   </script>
+    
+</body>
+</html>
