@@ -1,0 +1,78 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Layout */
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar Style */
+#navbar {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+}
+
+#navbar header {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  display: block;
+  padding: 8px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background: #ddd;
+}
+
+/* Main Content Area */
+#main-doc {
+  margin-left: 270px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.main-section {
+  margin-bottom: 50px;
+}
+
+/* Code Blocks */
+code {
+  background: #eee;
+  padding: 2px 5px;
+  display: block;
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}

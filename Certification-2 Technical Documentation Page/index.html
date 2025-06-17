@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Technical Documentation Page</title>
+  <!-- CSS dosyasını bağladık -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <header>JS Docs</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Setup">Setup</a>
+    <a class="nav-link" href="#Syntax">Syntax</a>
+    <a class="nav-link" href="#Examples">Examples</a>
+    <a class="nav-link" href="#Reference">Reference</a>
+  </nav>
+
+  <!-- MAIN DOCUMENTATION -->
+  <main id="main-doc">
+    
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a high-level programming language used to create interactive websites.</p>
+      <p>It runs in the browser and can modify HTML and CSS dynamically.</p>
+      <code>console.log("Hello, world!");</code>
+      <ul>
+        <li>Dynamic</li>
+        <li>Interpreted</li>
+        <li>Client-side</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Setup">
+      <header>Setup</header>
+      <p>To use JavaScript, you can include it in an HTML file using the &lt;script&gt; tag.</p>
+      <p>You can also load it externally from a .js file.</p>
+      <code>&lt;script src="app.js"&gt;&lt;/script&gt;</code>
+      <ul>
+        <li>Inline script</li>
+        <li>External file</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Syntax">
+      <header>Syntax</header>
+      <p>JavaScript uses statements and expressions similar to other programming languages.</p>
+      <p>Each statement ends with a semicolon.</p>
+      <code>let x = 5;</code>
+      <code>const name = "John";</code>
+      <ul>
+        <li>Variables</li>
+        <li>Functions</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Examples">
+      <header>Examples</header>
+      <p>Here are some useful JavaScript examples:</p>
+      <p>Click event handler:</p>
+      <code>
+        document.getElementById("btn").addEventListener("click", function() {
+          alert("Clicked!");
+        });
+      </code>
+      <ul>
+        <li>Event listeners</li>
+        <li>DOM manipulation</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <p>You can refer to the official documentation to learn more:</p>
+      <p>MDN Web Docs and W3Schools are popular resources.</p>
+      <code>// Visit developer.mozilla.org</code>
+      <ul>
+        <li>MDN</li>
+        <li>W3Schools</li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>
