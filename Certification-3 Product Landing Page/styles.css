@@ -64,3 +64,16 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
 }
+@media (max-width: 600px) {
+    body {
+        margin: 20px;
+        padding: 5px;
+    }
+    nav a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    #form {
+        padding: 20px;
+    }
+}
