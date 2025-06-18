@@ -3,48 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header id="header">
-        <img id="header-img" src="https://github.com/esholmess/Readme-Samples/blob/main/banner.png?raw=true" width="100%" alt=" Banner">
-        <nav id="nav-bar">
-            <h2>Welcome!</h2>
-            <a class="nav-link" href="#features">Features</a>
-            <a class="nav-link" href="#pricing">Pricing</a>
-            <a class="nav-link" href="#about">About Us</a>
-        </nav>
+        <div class="nav-container">
+            <nav id="nav-bar">
+                <a href="#" class="logo">Product Name</a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li><a class="nav-link" href="#about">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img id="header-img" src="https://github.com/esholmess/Readme-Samples/blob/main/banner.png?raw=true" alt="Banner">
     </header>
-      <main id="main-content">
+
+    <main id="main-content">
         <form action="https://www.freecodecamp.com/email-submit" id="form">
-            <label for="email">Enter Your Email</label>
-            <input type="email" id="email" name="email" placeholder="your email" required>
-            <input type="submit"></input>
+            <div class="form-group">
+                <label for="email">Enter Your Email</label>
+                <input type="email" id="email" name="email" placeholder="your email" required>
+            </div>
+            <input id="submit" type="submit" value="Get Started">
         </form>
+
         <div id="content">
-        <section id="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Feature 1: High quality</li>
-                <li>Feature 2: Affordable</li>
-                <li>Feature 3: User-friendly</li>
-            </ul>
-        </section>
-        <section id="pricing">
-            <h2>Pricing</h2>
-            <p>Basic Plan: $10/month</p>
-            <p>Premium Plan: $20/month</p>
-            <p>Enterprise Plan: $50/month</p>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are a company dedicated to providing the best products and services to our customers.</p>
-            </section>  
-        </div>    
-        
-        </main>
+            <section id="video-section">
+                <h2>Watch Our Product</h2>
+                <video id="video" controls>
+                    <source src="https://www.youtube.com/watch?v=zJSY8tbf_ys" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
 
+            <section id="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Feature 1: High quality</li>
+                    <li>Feature 2: Affordable</li>
+                    <li>Feature 3: User-friendly</li>
+                </ul>
+            </section>
 
+            <section id="pricing">
+                <h2>Pricing</h2>
+                <div class="pricing-options">
+                    <div class="price-card">
+                        <h3>Basic Plan</h3>
+                        <p class="price">$10/month</p>
+                        <ul>
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                        </ul>
+                        <button class="select-btn">Select</button>
+                    </div>
+                    <div class="price-card">
+                        <h3>Premium Plan</h3>
+                        <p class="price">$20/month</p>
+                        <ul>
+                            <li>All Basic Features</li>
+                            <li>Premium Feature 1</li>
+                            <li>Premium Feature 2</li>
+                        </ul>
+                        <button class="select-btn">Select</button>
+                    </div>
+                    <div class="price-card">
+                        <h3>Enterprise Plan</h3>
+                        <p class="price">$50/month</p>
+                        <ul>
+                            <li>All Premium Features</li>
+                            <li>Enterprise Feature 1</li>
+                            <li>Enterprise Feature 2</li>
+                        </ul>
+                        <button class="select-btn">Select</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <h2>About Us</h2>
+                <p>We are a company dedicated to providing the best products and services to our customers. Our mission is to deliver high-quality solutions that make a difference in people's lives.</p>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
