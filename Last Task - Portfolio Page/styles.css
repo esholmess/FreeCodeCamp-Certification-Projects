@@ -1,0 +1,464 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Van Gogh Inspired Color Palette */
+:root {
+    --vangogh-yellow: #FFD34E;
+    --vangogh-gold: #F6C244;
+    --vangogh-blue: #223A5E;
+    --vangogh-night: #2C406E;
+    --vangogh-green: #A8C686;
+    --vangogh-leaf: #6B8E23;
+    --vangogh-cream: #F9E79F;
+    --vangogh-white: #F7F7F7;
+    --vangogh-orange: #FFB347;
+    --text-color: #223A5E;
+    --background: #F7F7F7;
+    --section-bg: #F9E79F;
+    --border-brush: 6px solid var(--vangogh-gold);
+    --transition: all 0.3s cubic-bezier(.77,0,.18,1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #F7F7F7;
+    font-family: 'Inter', Arial, sans-serif;
+    color: #223A5E;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 48px auto 32px auto;
+    background: #fffefb;
+    border-radius: 32px;
+    box-shadow: 0 8px 48px 0 rgba(34,58,94,0.10);
+    padding: 2.5rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 95vw;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 1.2rem;
+}
+.profile-photo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #FFD34E;
+    box-shadow: 0 0 0 8px #223A5E33;
+    background: #F9E79F;
+}
+.sunflower-deco-profile {
+    position: absolute;
+    bottom: -18px;
+    right: -18px;
+    z-index: 2;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #223A5E;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    letter-spacing: 1px;
+}
+.subtitle {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #6B8E23;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+.nav-btn {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #223A5E;
+    background: linear-gradient(90deg, #FFD34E 60%, #F6C244 100%);
+    border: none;
+    padding: 0.7rem 1.6rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px 0 #FFD34E33;
+    cursor: pointer;
+    margin: 0;
+    transition: all 0.18s cubic-bezier(.77,0,.18,1);
+    position: relative;
+    outline: none;
+}
+.nav-btn:hover, .nav-btn.active {
+    background: linear-gradient(90deg, #F6C244 60%, #FFD34E 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px 0 #FFD34E55;
+    transform: translateY(-2px) scale(1.04) rotate(-1deg);
+}
+
+.section {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    background: #fffefb;
+    border-radius: 24px;
+    box-shadow: 0 2px 12px 0 #FFD34E22;
+    padding: 2rem 1.2rem 1.5rem 1.2rem;
+    position: relative;
+    box-sizing: border-box;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+}
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #223A5E;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    flex-shrink: 0;
+}
+.sunflower-deco-header {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.about-content p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.08rem;
+    color: #2C406E;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.career-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+}
+.career-item {
+    background: #F9E79F;
+    border-left: 6px solid #FFD34E;
+    border-radius: 0 18px 18px 0;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 1px 6px 0 #FFD34E22;
+    width: 100%;
+    box-sizing: border-box;
+}
+.career-item h3 {
+    font-family: 'Playfair Display', serif;
+    color: #223A5E;
+    font-size: 1.08rem;
+    margin-bottom: 0.2rem;
+}
+.career-date {
+    color: #6B8E23;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.gallery-grid {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+.gallery-item {
+    background: #fff;
+    border: 4px solid #FFD34E;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px 0 #FFD34E22;
+    width: 120px;
+    height: 120px;
+    min-width: 80px;
+    max-width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+    flex: 0 0 auto;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.gallery-item:hover {
+    border-color: #F6C244;
+    box-shadow: 0 4px 16px 0 #FFD34E55;
+    transform: scale(1.04) rotate(-1deg);
+}
+
+.github-graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+    width: 100%;
+
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #FFD34E #fffefb;
+}
+.github-graph img {
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    min-height: 10vh;
+    border-radius: 12px;
+    border: 3px solid #FFD34E;
+    background: #fff;
+    box-shadow: 0 1px 6px 0 #FFD34E22;
+    display: block;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 340px;
+    margin: 0 auto;
+    width: 100%;
+}
+.form-group label {
+    color: #223A5E;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+.form-group input, .form-group textarea {
+    background: #fff;
+    border: 2px solid #FFD34E;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    color: #223A5E;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #F6C244;
+    outline: none;
+    box-shadow: 0 0 0 2px #FFD34E55;
+}
+.btn.primary {
+    background: linear-gradient(90deg, #FFD34E 60%, #F6C244 100%);
+    color: #223A5E;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.6rem;
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px 0 #FFD34E33;
+    transition: all 0.18s cubic-bezier(.77,0,.18,1);
+}
+.btn.primary:hover {
+    background: linear-gradient(90deg, #F6C244 60%, #FFD34E 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px 0 #FFD34E55;
+    transform: translateY(-2px) scale(1.04) rotate(-1deg);
+}
+
+footer {
+    color: #223A5E;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    margin-top: 2.5rem;
+    padding: 1.2rem 0 0.2rem 0;
+    background: none;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 80vw;
+        padding: 2rem 1rem 1.5rem 1rem;
+    }
+    .main-title {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1.2rem 0.5rem;
+        border-radius: 18px;
+        margin: 16px auto 12px auto;
+    }
+    .main-title {
+        font-size: 1.3rem;
+    }
+    .profile-photo, .profile-photo img {
+        width: 90px;
+        height: 90px;
+    }
+    .sunflower-deco-profile svg {
+        width: 28px;
+        height: 28px;
+    }
+    .gallery-item {
+        width: 70px;
+        height: 70px;
+        min-width: 70px;
+        max-width: 90px;
+    }
+    .section {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        border-radius: 12px;
+    }
+    .section-header h2 {
+        font-size: 1.05rem;
+    }
+    .sunflower-deco-header svg {
+        width: 20px;
+        height: 20px;
+    }
+    .github-graph {
+        padding-bottom: 0.5rem;
+    }
+    .github-graph img {
+        min-width: 320px;
+        max-width: 600px;
+        width: 100%;
+    }
+    .github-graph::-webkit-scrollbar {
+        height: 6px;
+        background: #fffefb;
+    }
+    .github-graph::-webkit-scrollbar-thumb {
+        background: #FFD34E;
+        border-radius: 4px;
+    }
+    .contact-form {
+        max-width: 98vw;
+    }
+    .nav-btn {
+        min-width: 90px;
+        font-size: 0.92rem;
+        padding: 0.6rem 0.7rem;
+    }
+    .button-group {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 0.7rem;
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        scrollbar-width: thin;
+        scrollbar-color: #FFD34E #fffefb;
+    }
+    .button-group::-webkit-scrollbar {
+        height: 6px;
+        background: #fffefb;
+    }
+    .button-group::-webkit-scrollbar-thumb {
+        background: #FFD34E;
+        border-radius: 4px;
+    }
+    .nav-btn {
+        min-width: 90px;
+        flex: 0 0 auto;
+        font-size: 0.92rem;
+        padding: 0.6rem 0.7rem;
+    }
+    .gallery-grid {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 0.7rem;
+        padding-bottom: 0.5rem;
+        scrollbar-width: thin;
+        scrollbar-color: #FFD34E #fffefb;
+    }
+    .gallery-grid::-webkit-scrollbar {
+        height: 6px;
+        background: #fffefb;
+    }
+    .gallery-grid::-webkit-scrollbar-thumb {
+        background: #FFD34E;
+        border-radius: 4px;
+    }
+    .gallery-item {
+        min-width: 70px;
+        max-width: 90px;
+        width: 70px;
+        height: 70px;
+        flex: 0 0 auto;
+    }
+}
+
+/* Ensure all sections and forms are mobile-friendly */
+@media (max-width: 600px) {
+    .section {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+    }
+    .contact-form {
+        max-width: 98vw;
+    }
+    .github-graph img {
+        max-width: 98vw;
+    }
+}
+
+/* Prevent SVGs from overflowing */
+.sunflower-deco-profile svg, .sunflower-deco-header svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+} 
